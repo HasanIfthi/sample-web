@@ -1,59 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BrikX - Constructing Smart Experiences</title>
+  <title>BrikX — Constructing Smart Experiences</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="img/brikxxx.png" alt="BrikX Logo" class="logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span><span></span><span></span>
-      </div>
-    </nav>
-  </header>
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="logo-container">
+      <img src="img/brikxxx.png" alt="BrikX Logo" class="logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <div class="logo-text" style="display:none">Brik<span>X</span></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Get in Touch</a>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-  <main>
-    <section class="hero">
-      <div class="watermark"><img src="img/Brix.png" alt=""></div>
+<div class="mobile-menu">
+  <a href="index.html" class="active">Home</a>
+  <a href="projects.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<section class="page-hero hero" style="min-height: 100vh; display: flex; align-items: center; padding-top: 100px;">
+  <div class="grid-overlay"></div>
+  <div class="watermark"><img src="img/Brix.png" alt=""></div>
+  <div class="hero-inner" style="max-width: 1200px; margin: 0 auto; width: 100%; text-align: left; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+    
+    <div>
+      <div class="hero-tag" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); padding: 6px 15px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.2);">
+        <span style="width: 8px; height: 8px; background: var(--accent-blue); border-radius: 50%; box-shadow: 0 0 10px var(--accent-blue);"></span>
+        Construction &amp; Technology
+      </div>
+      <h1 style="font-size: clamp(3rem, 5vw, 4.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; text-align: left;">Building &amp; Coding<br>the <em style="color: var(--accent-blue); font-style: normal;">Future</em><br>Together.</h1>
+      <p style="font-size: 1.15rem; color: #cbd5e1; margin-bottom: 2.5rem; max-width: 500px;">BrikX bridges the physical and digital — delivering world-class construction projects and cutting-edge IT solutions under one roof.</p>
       
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Constructing<br><span class="highlight">Smart</span> Experiences</h1>
-          <p class="lead">We turn bold ideas into intelligent digital products that people love to use.</p>
-          <div class="hero-cta">
-            <a href="projects.html" class="btn primary">Explore Our Work</a>
-            <a href="contact.html" class="btn outline">Let's Talk</a>
-          </div>
-        </div>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="#sectors" class="btn primary" style="background: var(--primary-blue); color: white; border: none;">Explore Sectors</a>
+        <a href="contact.html" class="btn outline">Let's Talk &rarr;</a>
+      </div>
+    </div>
 
-        <div class="hero-visual">
-          <!-- You can replace with real screenshot/illustration later -->
-          <div class="mock-device">
-            <div class="device-frame"></div>
-            <div class="device-screen"></div>
-          </div>
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <div style="display: flex; gap: 1.5rem;">
+        <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); border-left: 4px solid var(--accent-blue); flex: 1;">
+          <div style="font-size: 2rem; font-weight: 800; color: white;">50+</div>
+          <div style="font-size: 0.9rem; color: var(--accent-blue); font-weight: 600;">Construction Projects</div>
+        </div>
+        <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); border-left: 4px solid var(--primary-blue); flex: 1;">
+          <div style="font-size: 2rem; font-weight: 800; color: white;">80+</div>
+          <div style="font-size: 0.9rem; color: var(--primary-blue); font-weight: 600;">IT Solutions Delivered</div>
         </div>
       </div>
-    </section>
-  </main>
+      
+      <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); border-left: 4px solid white; display: flex; gap: 2rem;">
+        <div>
+          <div style="font-size: 1.5rem; font-weight: 800; color: white;">5+</div>
+          <div style="font-size: 0.9rem; color: #cbd5e1;">Countries Served</div>
+        </div>
+        <div>
+          <div style="font-size: 1.5rem; font-weight: 800; color: white;">2020</div>
+          <div style="font-size: 0.9rem; color: #cbd5e1;">Founded</div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 BrikX — Constructing Smart Experiences</p>
-  </footer>
+<section id="sectors" class="section content" style="padding: 100px 5%; background: var(--light-bg);">
+  <div class="page-wrap">
+    <div class="section-label">What We Do</div>
+    <h2 class="section-title" style="text-align: left; margin-bottom: 1rem;">Two Sectors,<br>One Vision.</h2>
+    <p class="section-sub">BrikX operates across Construction and IT — bringing the same commitment to quality, innovation, and results to both industries.</p>
+    
+    <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 3rem;">
+      
+      <a href="projects.html" class="project-card" style="border-left: 5px solid var(--dark-blue); text-decoration: none; display: flex; flex-direction: column;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏗️</div>
+        <h3 style="font-size: 1.8rem; color: var(--text-main); margin-bottom: 1rem;">Construction</h3>
+        <p style="color: var(--text-muted); flex-grow: 1; margin-bottom: 1.5rem;">From foundation to finish, BrikX delivers precision-engineered buildings, infrastructure, and real estate solutions. We combine modern materials with smart project management.</p>
+        <span style="color: var(--dark-blue); font-weight: 700; font-size: 0.95rem;">Explore Construction &rarr;</span>
+      </a>
 
-  <script src="js/app.js"></script>
+      <a href="projects.html" class="project-card" style="border-left: 5px solid var(--primary-blue); text-decoration: none; display: flex; flex-direction: column;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">💻</div>
+        <h3 style="font-size: 1.8rem; color: var(--text-main); margin-bottom: 1rem;">Information Technology</h3>
+        <p style="color: var(--text-muted); flex-grow: 1; margin-bottom: 1.5rem;">We craft intelligent digital products — from web platforms and mobile apps to enterprise software. Our tech team turns complex problems into elegant, scalable solutions.</p>
+        <span style="color: var(--primary-blue); font-weight: 700; font-size: 0.95rem;">Explore IT &rarr;</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="section content" style="padding: 100px 5%; background: var(--white);">
+  <div class="page-wrap">
+    <div class="section-label">Our Foundation</div>
+    <h2 class="section-title" style="text-align: left;">Vision &amp; Mission</h2>
+    <p class="section-sub">Guided by purpose, driven by excellence — the principles that shape every decision at BrikX.</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 3rem;">
+      <div class="vm-card vision">
+        <div class="vm-badge vision">🔭 Vision</div>
+        <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">To be the most trusted dual-sector company in the region</h3>
+        <p>We envision a world where great infrastructure and smart technology grow together — where BrikX is the partner of choice for organizations.</p>
+      </div>
+      <div class="vm-card mission">
+        <div class="vm-badge mission">🎯 Mission</div>
+        <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">Delivering excellence across construction and technology</h3>
+        <p>Our mission is to empower clients through innovative construction practices and cutting-edge IT solutions — creating lasting value.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/94741926797" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.005 2.115c-7.66 0-13.89 6.23-13.89 13.89 0 2.45.64 4.84 1.84 6.94L2 29.885l7.1-1.86c2.04 1.1 4.34 1.68 6.9 1.68 7.66 0 13.89-6.23 13.89-13.89s-6.23-13.89-13.885-13.89zm0 25.12c-2.07 0-4.1-.55-5.88-1.6l-.42-.25-4.36 1.15 1.16-4.25-.28-.44c-1.15-1.83-1.76-3.95-1.76-6.14 0-6.33 5.15-11.48 11.48-11.48 6.33 0 11.48 5.15 11.48 11.48 0 6.33-5.15 11.48-11.48 11.48zm6.29-8.58c-.34-.17-2.04-1.01-2.35-1.12-.31-.11-.54-.17-.77.17-.23.34-.89 1.12-1.09 1.35-.2.23-.4.25-.74.08-.34-.17-1.45-.54-2.77-1.71-1.03-.92-1.72-2.05-1.92-2.39-.2-.34-.02-.53.15-.7.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.08-.17-.77-1.86-1.06-2.54-.28-.66-.56-.57-.77-.58-.2-.01-.43-.01-.66-.01-.23 0-.6.08-.92.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.18.82.35 1.46.57 1.96.73.82.26 1.57.22 2.16.14.66-.09 2.04-.83 2.33-1.63.29-.8.29-1.49.2-1.63-.08-.15-.31-.24-.65-.41z"/>
+  </svg>
+</a>
+
+<footer>
+  <p>&copy; 2026 <span>BrikX</span> &mdash; Constructing Smart Experiences</p>
+</footer>
+
+<script src="js/app.js"></script>
 </body>
 </html>

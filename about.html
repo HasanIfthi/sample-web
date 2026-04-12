@@ -1,50 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BrikX - About Us</title>
+  <title>BrikX — About Us</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="img/brikxxx.png" alt="BrikX Logo" class="logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span><span></span><span></span>
-      </div>
-    </nav>
-  </header>
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="logo-container">
+      <img src="img/brikxxx.png" alt="BrikX Logo" class="logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <div class="logo-text" style="display:none">Brik<span>X</span></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Products</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Get in Touch</a>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-  <main>
-    <section class="section about">
-      <div class="watermark"><img src="img/Brix.png" alt=""></div>
-      <div class="content">
-        <h2>About BrikX</h2>
-        <p>We are a passionate team of innovators, developers, and designers dedicated to building intelligent digital experiences since 2020.</p>
-        
-        <div class="stats">
-          <div>50+<span>Projects Delivered</span></div>
-          <div>20+<span>Team Members</span></div>
-          <div>5<span>Countries Served</span></div>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Products</a>
+  <a href="about.html" class="active">About</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="watermark"><img src="img/Brix.png" alt=""></div>
+  <div class="page-hero-inner">
+    <div class="section-label">About BrikX</div>
+    <h1>Built on Trust,<br>Driven by <em>Innovation</em></h1>
+    <p>We are a passionate team of innovators, engineers, and designers dedicated to building intelligent digital and physical experiences since 2020.</p>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-grid">
+    <div>
+      <div class="section-label">Who We Are</div>
+      <h2 class="section-title">A company that builds<br>and codes.</h2>
+      <p class="section-sub" style="margin-bottom: 1.5rem;">BrikX was founded with a bold idea — that a single company could master both the physical world of construction and the digital world of technology. Since 2020, we've delivered over 130 projects across 5 countries, with one consistent standard: excellence.</p>
+      <p class="section-sub">Our team brings together civil engineers, architects, software developers, and UX designers — all working under one roof to deliver end-to-end solutions that others can't.</p>
+      
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="about-stat-num">50+</div>
+          <div class="about-stat-label">Construction Projects</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">80+</div>
+          <div class="about-stat-label">IT Projects</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">20+</div>
+          <div class="about-stat-label">Team Members</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">5</div>
+          <div class="about-stat-label">Countries Served</div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+    
+    <div>
+      <div class="vm-card vision">
+        <div class="vm-badge vision">🔭 Vision</div>
+        <h3>To be the most trusted dual-sector company in the region</h3>
+        <p>Where great infrastructure and smart technology grow side by side.</p>
+      </div>
+      <div class="vm-card mission">
+        <div class="vm-badge mission">🎯 Mission</div>
+        <h3>Delivering excellence across construction and technology</h3>
+        <p>Creating lasting value through innovation, precision, and purpose-driven execution.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 BrikX — Constructing Smart Experiences</p>
-  </footer>
+<section class="values-section">
+  <div class="page-wrap">
+    <div style="text-align: center;">
+      <div class="section-label">What Drives Us</div>
+      <h2 class="section-title">Our Core Values</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">⚡</div>
+        <h4>Innovation First</h4>
+        <p>We embrace new technologies and methods — in bricks and bytes alike — to deliver solutions that truly move the needle.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🏆</div>
+        <h4>Uncompromising Quality</h4>
+        <p>From structural load calculations to UI pixel density, we obsess over every detail that touches our clients' experience.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🤝</div>
+        <h4>Client Partnership</h4>
+        <p>We don't just deliver projects — we build relationships. Our clients come back because we treat their goals as our own.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🌱</div>
+        <h4>Sustainability</h4>
+        <p>Whether it's green building materials or energy-efficient cloud architecture, we design for a better tomorrow.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🔒</div>
+        <h4>Integrity Always</h4>
+        <p>Transparent timelines, honest pricing, and real communication. We mean what we say — every time.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🚀</div>
+        <h4>Speed with Precision</h4>
+        <p>We move fast without cutting corners — agile project management meets rigorous engineering discipline.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="js/app.js"></script>
+<footer>
+  <p>&copy; 2026 <span>BrikX</span> &mdash; Constructing Smart Experiences</p>
+</footer>
+
+<script src="js/app.js"></script>
 </body>
 </html>
