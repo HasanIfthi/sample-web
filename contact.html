@@ -1,51 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BrikX - Contact Us</title>
+  <title>BrikX — Contact Us</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="img/brikxxx.png" alt="BrikX Logo" class="logo">
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="logo-container">
+      <img src="img/brikxxx.png" alt="BrikX Logo" class="logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <div class="logo-text" style="display:none">Brik<span>X</span></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Get in Touch</a>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="active">Contact Us</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="watermark"><img src="img/Brix.png" alt=""></div>
+  <div class="page-hero-inner">
+    <div class="section-label">Get in Touch</div>
+    <h1>Let's Build<br>Something <em>Great</em></h1>
+    <p>Ready to start your next construction or IT project? We'd love to hear from you. Send us a message and our team will be in touch within 24 hours.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Contact Information</h3>
+      <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Reach out through any of the channels below or fill in the form and we'll get back to you promptly.</p>
+      
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📍</div>
+        <div class="contact-detail-text">
+          <strong>Office</strong>
+          BrikX HQ, Colombo 03, Sri Lanka
+        </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span><span></span><span></span>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📧</div>
+        <div class="contact-detail-text">
+          <strong>Email</strong>
+          hello@brikx.com
+        </div>
       </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="section">
-      <div class="watermark"><img src="img/Brix.png" alt=""></div>
-      <div class="content">
-        <h2>Get in Touch</h2>
-        <p>Ready to start your next project? We'd love to hear from you.</p>
-
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Email Address" required>
-          <textarea placeholder="Your Message" rows="6" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📞</div>
+        <div class="contact-detail-text">
+          <strong>Phone</strong>
+          +94 11 234 5678
+        </div>
       </div>
-    </section>
-  </main>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">🕐</div>
+        <div class="contact-detail-text">
+          <strong>Hours</strong>
+          Monday – Friday, 8:00 AM – 6:00 PM
+        </div>
+      </div>
 
-  <footer>
-    <p>© 2026 BrikX — Constructing Smart Experiences</p>
-  </footer>
+      <div style="margin-top:3.5rem">
+        <div class="section-label" style="margin-bottom:1rem; font-size: 0.8rem;">Looking for a specific sector?</div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <a href="construction.html" class="sector-link">🏗️ Construction</a>
+          <a href="it.html" class="sector-link">💻 IT &amp; Digital</a>
+        </div>
+      </div>
+    </div>
 
-  <script src="js/app.js"></script>
+    <div class="contact-form-wrap" style="background: var(--white); padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid var(--border-color);">
+      <form id="whatsappForm" class="contact-form" style="display: flex; flex-direction: column; gap: 1.2rem;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;">
+          <input type="text" id="waName" placeholder="Your Name" required style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 0.95rem; outline: none;">
+          <input type="email" id="waEmail" placeholder="Email Address" required style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 0.95rem; outline: none;">
+        </div>
+        <input type="text" id="waSubject" placeholder="Subject" style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 0.95rem; outline: none;">
+        <select id="waSector" style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 0.95rem; outline: none; background: transparent; cursor: pointer; color: var(--text-muted);" required>
+          <option value="" disabled selected>Enquiry Type</option>
+          <option value="Construction Project">Construction Project</option>
+          <option value="IT / Digital Solution">IT / Digital Solution</option>
+          <option value="Both Sectors">Both Sectors</option>
+          <option value="Other">Other</option>
+        </select>
+        <textarea id="waMessage" placeholder="Tell us about your project..." rows="5" required style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 0.95rem; outline: none; resize: vertical;"></textarea>
+        <button type="submit" class="btn primary" style="border: none; width: 100%; font-size: 1rem; margin-top: 0.5rem; cursor: pointer;">Send via WhatsApp &rarr;</button>
+      </form>
+    </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 <span>BrikX</span> &mdash; Constructing Smart Experiences</p>
+</footer>
+
+<script src="js/app.js"></script>
 </body>
 </html>
